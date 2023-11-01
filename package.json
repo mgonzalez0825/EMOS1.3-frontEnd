@@ -1,8 +1,8 @@
 {
   "name": "emos-app",
   "version": "0.1.0",
-  "private": true,
-  "proxy": "process.env.REACT_APP_BACKEND_URL",
+  "private": false,
+  "proxy": "http://localhost:8080/",
   "dependencies": {
     "@fullcalendar/core": "^6.1.5",
     "@fullcalendar/daygrid": "^6.1.5",
