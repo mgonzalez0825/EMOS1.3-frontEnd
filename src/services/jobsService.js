@@ -1,7 +1,6 @@
 import axios from "axios";  
 
-const JOBS_API_BASE_URL = "http://localhost:8080/api/v1/jobs";
-
+const JOBS_API_BASE_URL = `${REACT_APP_BACKEND_URL}/api/v1/jobs`
 class JobsService {
 
     getAllJobs(){

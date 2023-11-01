@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const DEPT_API_BASE_URL = "http://localhost:8080/api/v1/departments";
+const DEPT_API_BASE_URL = `${REACT_APP_BACKEND_URL}/api/v1/departments`;
 
 class DepartmentService {
 
