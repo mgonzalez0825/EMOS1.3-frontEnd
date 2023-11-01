@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const EMPLOYEE_API_BASE_URL = `${REACT_APP_BACKEND_URL}/api/v1/employees`;
+const EMPLOYEE_API_BASE_URL = `${process.env.REACT_APP_BACKEND_URL}/api/v1/employees`;
 
 
 class EmployeeService {
