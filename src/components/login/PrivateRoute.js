@@ -10,7 +10,7 @@ const PrivateRoute = ({children}) => {
     const[isValid,setIsValid] = useState(null);
 
     if(jwt){
-        grab(`/api/v1/auth/validate?token=${jwt}`,"get",jwt).then(isValid => {
+        grab(`${process.env.REACT_APP_BACKEND_URL}/api/v1/auth/validate?token=${jwt}`,"get",jwt).then(isValid => {
             setIsValid(isValid);
             setIsLoading(false);
         });
